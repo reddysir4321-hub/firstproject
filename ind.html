@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>DevOps Training</title>
+<style>
+        body {
+            font-family: Arial;
+            text-align: center;
+            background: #f4f4f4;
+        }
+        button {
+            padding: 10px 20px;
+            margin: 5px;
+        }
+        #box {
+            background: white;
+            margin: 20px;
+            padding: 20px;
+        }
+</style>
+</head>
+<body>
+ 
+<h1>🚀 DevOps Training Institute</h1>
+<p>Learn DevOps from Basics</p>
+ 
+<button onclick="show('aws')">AWS</button>
+<button onclick="show('linux')">Linux</button>
+<button onclick="show('docker')">Docker</button>
+ 
+<div id="box">Click a course</div>
+ 
+<script>
+function show(course) {
+    if(course === 'aws')
+        box.innerHTML = "AWS DevOps: EC2, S3, IAM, CI/CD";
+    if(course === 'linux')
+        box.innerHTML = "Linux: Commands, Users, Shell";
+    if(course === 'docker')
+        box.innerHTML = "Docker: Images, Containers";
+}
+</script>
+ 
+</body>
+</html>
